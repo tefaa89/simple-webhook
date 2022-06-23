@@ -1,8 +1,8 @@
 FROM golang:1.18
 
-WORKDIR "/go/src/simple-webook/"
+WORKDIR "/go/src/simple-webhook/"
 COPY * .
-RUN go build -o simple-webook
+RUN go build -o simple-webhook
 
 EXPOSE 8080
-CMD ["./simple-webook"]
+CMD ["./simple-webhook"]
