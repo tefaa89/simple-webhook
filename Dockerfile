@@ -1,12 +1,8 @@
 FROM golang:1.18
 
-WORKDIR "/Users/mostafa.abdelkhalek/Development/go/src/simple_webhook_service"
-
-COPY go.mod .
-COPY main.go .
-
-RUN go build -o service
-
+WORKDIR "/go/src/simple-webook/"
+COPY * .
+RUN go build -o simple-webook
 
 EXPOSE 8080
-CMD ["./service"]
+CMD ["./simple-webook"]
