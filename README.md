@@ -2,6 +2,9 @@
 A simple webhook server written in GO
 
 https://hub.docker.com/repository/docker/tefaa89/simple-webhook
+```
+ docker run -p8080:8080 webhook-service
+```
 
 # Usage
 Send a POST request on port 8080, should receive 200 by default with no delays.
